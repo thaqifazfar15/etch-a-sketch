@@ -26,3 +26,5 @@ filled on the box. In order to restart your progress, just press the "Restart" b
 - How to use .cloneNode() to append a same element multiple times to a container.
 - How to use JS to create styles for element dynamically.
 - How to create responsive square grid.
+- How to convert all elements of the same class to an array.
+- How to change background color of an element with hover effect.
