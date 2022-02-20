@@ -13,8 +13,24 @@ body {
   color: black;
 }
 
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
 .title {
   text-align: center;
+  font-size: clamp(1.5em, 8vw, 4em);
+}
+
+.color-picker {
+  height: min(4rem, 10vw);
+  width: min(4rem, 10vw);
+  background-color: black;
+  border-radius: 50%;
 }
 
 .wrapper {
