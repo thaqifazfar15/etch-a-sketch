@@ -20,7 +20,6 @@ function createGrid(num) {
       gridBox.append(gridItem.cloneNode());
     }
   }
-  eventGrid();
 }
 
 function clearGrid() {
@@ -54,6 +53,11 @@ function resizeGrid() {
   }
   return createGrid(num);
 }
+
+const drawButton = document.querySelector(".btn-draw");
+drawButton.addEventListener("click", function () {
+  eventGrid();
+});
 
 const resizeButton = document.querySelector(".btn-resize");
 resizeButton.addEventListener("click", function () {
