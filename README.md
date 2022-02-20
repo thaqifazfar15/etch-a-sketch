@@ -19,8 +19,10 @@ filled on the box. In order to restart your progress, just press the "Restart" b
 
 ## Play in Broser
 
-[Play here]()
+[Play here](https://thaqifazfar15.github.io/etch-a-sketch/)
 
 ## What I Learned
 
--
+- How to use .cloneNode() to append a same element multiple times to a container.
+- How to use JS to create styles for element dynamically.
+- How to create responsive square grid.
