@@ -16,6 +16,24 @@ function eraseGrid() {
   });
 }
 
+function randomColor() {
+  const index = "0123456789ABCDEF";
+  let color = "#";
+  for (i = 0; i < 6; i++) {
+    color += index[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+function randomizeGrid() {
+  const allGridItem = Array.from(document.querySelectorAll(".grid-item"));
+  allGridItem.forEach((item) => {
+    item.addEventListener("mouseover", function () {
+      item.style.backgroundColor = randomColor();
+    });
+  });
+}
+
 function createGrid(num) {
   const gridBox = document.querySelector(".grid-box");
   const gridItem = document.createElement("div");
@@ -73,6 +91,11 @@ function resizeGrid() {
 const drawButton = document.querySelector(".btn-draw");
 drawButton.addEventListener("click", function () {
   eventGrid();
+});
+
+const randomButton = document.querySelector(".btn-random");
+randomButton.addEventListener("click", function () {
+  randomizeGrid();
 });
 
 const resizeButton = document.querySelector(".btn-resize");
