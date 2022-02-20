@@ -38,6 +38,13 @@ function clearGrid() {
   });
 }
 
+function resetGrid() {
+  const gridItems = Array.from(document.querySelectorAll(".grid-item"));
+  gridItems.forEach((item) => {
+    item.style.backgroundColor = "rgba(0, 0, 0, 0)";
+  });
+}
+
 function addClass(elem) {
   elem.classList.add("clicking");
 }
@@ -81,9 +88,8 @@ eraseButton.addEventListener("click", function () {
 
 const resetButton = document.querySelector(".btn-reset");
 resetButton.addEventListener("click", function () {
-  //reset the game
-  clearGrid();
-  createGrid(8);
+  //reset the canvas to white
+  resetGrid();
 });
 
 //create a 8x8 grid at the moment when browser is opened or refresh
