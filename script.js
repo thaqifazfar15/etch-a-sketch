@@ -1,4 +1,11 @@
-//function to create grid
+function eventGrid() {
+  const allGridItem = Array.from(document.querySelectorAll(".grid-item"));
+  allGridItem.forEach((item) => {
+    item.addEventListener("mouseover", function () {
+      item.style.backgroundColor = "rgba(0, 0, 0, 1)";
+    });
+  });
+}
 
 function createGrid(num) {
   const gridBox = document.querySelector(".grid-box");
@@ -13,6 +20,7 @@ function createGrid(num) {
       gridBox.append(gridItem.cloneNode());
     }
   }
+  eventGrid();
 }
 
 function clearGrid() {
@@ -39,6 +47,7 @@ function changeColor(elem) {
 }
 
 function resizeGrid() {
+  //ask user to enter their number
   let num = prompt("Enter your value: ");
   if (num < 2 || num > 64) {
     return "Wrong Input";
@@ -48,17 +57,16 @@ function resizeGrid() {
 
 const resizeButton = document.querySelector(".btn-resize");
 resizeButton.addEventListener("click", function () {
-  clearGrid();
-  resizeGrid();
+  clearGrid(); //grid need to be clear first
+  resizeGrid(); //user will enter their number
 });
 
 const resetButton = document.querySelector(".btn-reset");
 resetButton.addEventListener("click", function () {
+  //reset the game
   clearGrid();
   createGrid(8);
 });
-
-//function to clear grid
 
 //create a 8x8 grid at the moment when browser is opened or refresh
 createGrid(8);
