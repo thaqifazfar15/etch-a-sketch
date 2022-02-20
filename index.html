@@ -10,31 +10,16 @@
   <body>
     <h1 class="title">Etch-A-Sketch</h1>
     <div class="wrapper">
-      <button class="btn btn-draw">Draw</button>
-      <button class="btn btn-random">Random</button>
-      <button class="btn btn-resize">Re-Size</button>
-      <button class="btn btn-eraser">Eraser</button>
-      <button class="btn btn-reset">Reset</button>
+      <button class="btn btn-draw" onclick="changeColor(this)">Draw</button>
+      <button class="btn btn-random" onclick="changeColor(this)">Random</button>
+      <button class="btn btn-resize" onclick="changeColor(this)">
+        Re-Size
+      </button>
+      <button class="btn btn-eraser" onclick="changeColor(this)">Eraser</button>
+      <button class="btn btn-reset" onclick="changeColor(this)">Reset</button>
     </div>
     <div class="grid-container">
-      <div class="grid-box">
-        <!--<div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div> -->
-      </div>
+      <div class="grid-box"></div>
     </div>
   </body>
   <script src="./script.js"></script>

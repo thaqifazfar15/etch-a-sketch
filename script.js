@@ -15,5 +15,50 @@ function createGrid(num) {
   }
 }
 
+function clearGrid() {
+  const gridItems = Array.from(document.querySelectorAll(".grid-item"));
+  gridItems.forEach((item) => {
+    item.remove();
+  });
+}
+
+function addClass(elem) {
+  elem.classList.add("clicking");
+}
+
+function removeClass() {
+  const buttons = Array.from(document.querySelectorAll(".btn"));
+  buttons.forEach((btn) => {
+    btn.classList.remove("clicking");
+  });
+}
+
+function changeColor(elem) {
+  removeClass();
+  addClass(elem);
+}
+
+function resizeGrid() {
+  let num = prompt("Enter your value: ");
+  if (num < 2 || num > 64) {
+    return "Wrong Input";
+  }
+  return createGrid(num);
+}
+
+const resizeButton = document.querySelector(".btn-resize");
+resizeButton.addEventListener("click", function () {
+  clearGrid();
+  resizeGrid();
+});
+
+const resetButton = document.querySelector(".btn-reset");
+resetButton.addEventListener("click", function () {
+  clearGrid();
+  createGrid(8);
+});
+
 //function to clear grid
-createGrid(5);
+
+//create a 8x8 grid at the moment when browser is opened or refresh
+createGrid(8);
