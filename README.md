@@ -28,3 +28,4 @@ filled on the box. In order to restart your progress, just press the "Restart" b
 - How to create responsive square grid.
 - How to convert all elements of the same class to an array.
 - How to change background color of an element with hover effect.
+- How to put footer where it belong.
