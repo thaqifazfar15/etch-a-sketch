@@ -1,4 +1,4 @@
-# Etch-A-Sketch (Incomplete)
+# Etch-A-Sketch
 
 This project is part of The Odin Project Foundation curriculum.
 
@@ -29,3 +29,4 @@ filled on the box. In order to restart your progress, just press the "Restart" b
 - How to convert all elements of the same class to an array.
 - How to change background color of an element with hover effect.
 - How to put footer where it belong.
+- How to create a random hex color and assigned it to an element.
