@@ -63,7 +63,7 @@ function changeColor(elem) {
 
 function resizeGrid() {
   //ask user to enter their number
-  let num = prompt("Enter your value: ");
+  let num = prompt("Enter your value (must be in range from 2 to 64) :");
   if (num < 2 || num > 64) {
     return createGrid(8);
   }
