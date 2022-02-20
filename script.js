@@ -7,6 +7,15 @@ function eventGrid() {
   });
 }
 
+function eraseGrid() {
+  const allGridItem = Array.from(document.querySelectorAll(".grid-item"));
+  allGridItem.forEach((item) => {
+    item.addEventListener("mouseover", function () {
+      item.style.backgroundColor = "rgba(0, 0, 0, 0)";
+    });
+  });
+}
+
 function createGrid(num) {
   const gridBox = document.querySelector(".grid-box");
   const gridItem = document.createElement("div");
@@ -49,7 +58,7 @@ function resizeGrid() {
   //ask user to enter their number
   let num = prompt("Enter your value: ");
   if (num < 2 || num > 64) {
-    return "Wrong Input";
+    return createGrid(8);
   }
   return createGrid(num);
 }
@@ -63,6 +72,11 @@ const resizeButton = document.querySelector(".btn-resize");
 resizeButton.addEventListener("click", function () {
   clearGrid(); //grid need to be clear first
   resizeGrid(); //user will enter their number
+});
+
+const eraseButton = document.querySelector(".btn-eraser");
+eraseButton.addEventListener("click", function () {
+  eraseGrid();
 });
 
 const resetButton = document.querySelector(".btn-reset");
