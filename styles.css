@@ -13,6 +13,11 @@ body {
   color: black;
 }
 
+.main-container {
+  position: relative;
+  min-height: 100vh;
+}
+
 .title-container {
   display: flex;
   justify-content: center;
@@ -85,10 +90,26 @@ body {
   border: solid 1px rgba(0, 0, 0, 0.1);
 }
 
+.container-blank {
+  width: 100%;
+  height: 2em;
+}
+
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 2.5rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  font-size: clamp(0.1rem, 3vw, 1rem);
+}
+
+.footer-container > a {
+  margin-inline: 0.4em;
+  color: black;
 }

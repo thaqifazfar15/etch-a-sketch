@@ -5,26 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-A-Sketch | Thaqif Azfar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="title-container">
-      <h1 class="title">Etch-A-Sketch</h1>
-      <div class="color-picker"></div>
+    <div class="main-container">
+      <div class="title-container">
+        <h1 class="title">Etch-A-Sketch</h1>
+        <div class="color-picker"></div>
+      </div>
+      <div class="wrapper">
+        <button class="btn btn-draw" onclick="changeColor(this)">Draw</button>
+        <button class="btn btn-random" onclick="changeColor(this)">
+          Random
+        </button>
+        <button class="btn btn-resize" onclick="changeColor(this)">
+          Re-Size
+        </button>
+        <button class="btn btn-eraser" onclick="changeColor(this)">
+          Eraser
+        </button>
+        <button class="btn btn-reset" onclick="changeColor(this)">Reset</button>
+      </div>
+      <div class="grid-container">
+        <div class="grid-box"></div>
+      </div>
+      <div class="container-blank"></div>
+      <footer>
+        <div class="footer-container">
+          Copyright 2022 © Thaqif Azfar | All Rights Reserved
+          <a
+            href="https://github.com/thaqifazfar15/etch-a-sketch"
+            target="_blank"
+            ><i class="fa fa-github" style="font-size: 1.5rem"></i
+          ></a>
+        </div>
+      </footer>
     </div>
-    <div class="wrapper">
-      <button class="btn btn-draw" onclick="changeColor(this)">Draw</button>
-      <button class="btn btn-random" onclick="changeColor(this)">Random</button>
-      <button class="btn btn-resize" onclick="changeColor(this)">
-        Re-Size
-      </button>
-      <button class="btn btn-eraser" onclick="changeColor(this)">Eraser</button>
-      <button class="btn btn-reset" onclick="changeColor(this)">Reset</button>
-    </div>
-    <div class="grid-container">
-      <div class="grid-box"></div>
-    </div>
-    <footer>Copyright 2022 © Thaqif Azfar | All Rights Reserved</footer>
   </body>
   <script src="./script.js"></script>
 </html>
