@@ -1,4 +1,4 @@
-# Etch-A-Sketch (Incomplete)
+# Etch-A-Sketch
 
 This project is part of The Odin Project Foundation curriculum.
 
