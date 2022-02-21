@@ -3,6 +3,7 @@ function eventGrid() {
   allGridItem.forEach((item) => {
     item.addEventListener("mouseover", function () {
       item.style.backgroundColor = "rgba(0, 0, 0, 1)";
+      item.style.border = "none";
     });
   });
 }
@@ -12,6 +13,7 @@ function eraseGrid() {
   allGridItem.forEach((item) => {
     item.addEventListener("mouseover", function () {
       item.style.backgroundColor = "rgba(0, 0, 0, 0)";
+      item.style.border = "solid 1px rgba(0, 0, 0, 0.1)";
     });
   });
 }
@@ -30,6 +32,7 @@ function randomizeGrid() {
   allGridItem.forEach((item) => {
     item.addEventListener("mouseover", function () {
       item.style.backgroundColor = randomColor();
+      item.style.border = "none";
     });
   });
 }
@@ -60,6 +63,7 @@ function resetGrid() {
   const gridItems = Array.from(document.querySelectorAll(".grid-item"));
   gridItems.forEach((item) => {
     item.style.backgroundColor = "rgba(0, 0, 0, 0)";
+    item.style.border = "solid 1px rgba(0, 0, 0, 0.1)";
   });
 }
 
