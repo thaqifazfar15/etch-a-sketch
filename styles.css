@@ -23,7 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.4rem;
 }
 
 .title {
@@ -45,9 +45,10 @@ body {
   position: absolute;
   right: -8px;
   top: -8px;
-  width: 5rem;
-  height: 5rem;
+  width: 10rem;
+  height: 10rem;
   border: none;
+  cursor: pointer;
 }
 
 .wrapper {
