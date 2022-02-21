@@ -43,8 +43,8 @@ body {
 
 .color-picker {
   position: absolute;
-  right: -8px;
-  top: -8px;
+  top: -3rem;
+  right: -1rem;
   width: 10rem;
   height: 10rem;
   border: none;
