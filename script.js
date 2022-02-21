@@ -1,8 +1,24 @@
+var colorWell;
+var defaultColor = "rgb(0, 0, 0)";
+
+window.addEventListener("load", startup, false);
+
+function startup() {
+  colorWell = document.querySelector(".color-picker");
+  colorWell.value = defaultColor;
+  colorWell.addEventListener("change", updateAll, false);
+  colorWell.select();
+}
+
+function updateAll(event) {
+  defaultColor = event.target.value;
+}
+
 function eventGrid() {
   const allGridItem = Array.from(document.querySelectorAll(".grid-item"));
   allGridItem.forEach((item) => {
     item.addEventListener("mouseover", function () {
-      item.style.backgroundColor = "rgba(0, 0, 0, 1)";
+      item.style.backgroundColor = defaultColor;
       item.style.border = "none";
     });
   });

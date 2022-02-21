@@ -31,11 +31,23 @@ body {
   font-size: clamp(1.5em, 8vw, 4em);
 }
 
-.color-picker {
+.color-container {
+  position: relative;
   height: min(4rem, 10vw);
   width: min(4rem, 10vw);
   background-color: black;
   border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.29);
+}
+
+.color-picker {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  width: 5rem;
+  height: 5rem;
+  border: none;
 }
 
 .wrapper {
