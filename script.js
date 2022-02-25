@@ -1,5 +1,6 @@
 var colorWell;
-var defaultColor = "rgb(0, 0, 0)";
+var defaultColor = "rbg(0, 0, 0)";
+var colorContainer = document.querySelector(".color-container");
 
 window.addEventListener("load", startup, false);
 
@@ -12,6 +13,7 @@ function startup() {
 
 function updateAll(event) {
   defaultColor = event.target.value;
+  colorContainer.style.backgroundColor = defaultColor;
 }
 
 function eventGrid() {
