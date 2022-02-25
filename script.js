@@ -1,5 +1,5 @@
 var colorWell;
-var defaultColor = "rbg(0, 0, 0)";
+var defaultColor = "rgb(0, 0, 0)";
 var colorContainer = document.querySelector(".color-container");
 
 window.addEventListener("load", startup, false);
